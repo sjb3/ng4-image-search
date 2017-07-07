@@ -5,7 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ImageListComponent } from './image-list/image-list.component';
+
 import { ImageService } from './shared/image.service';
+
+// import { MaterialModule } from '@angular/material';
+// import { MasonryModule } from 'angular2-masonry';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,10 @@ import { ImageService } from './shared/image.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    // MaterialModule,
+    // MasonryModule,
+    // BrowserAnimationsModule
   ],
   providers: [ImageService],
   bootstrap: [AppComponent]
