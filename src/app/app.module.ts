@@ -9,8 +9,8 @@ import { ImageListComponent } from './image-list/image-list.component';
 import { ImageService } from './shared/image.service';
 
 // import { MaterialModule } from '@angular/material';
-// import { MasonryModule } from 'angular2-masonry';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MasonryModule } from 'angular2-masonry';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,8 @@ import { ImageService } from './shared/image.service';
     FormsModule,
     HttpModule,
     // MaterialModule,
-    // MasonryModule,
-    // BrowserAnimationsModule
+    MasonryModule,
+    BrowserAnimationsModule
   ],
   providers: [ImageService],
   bootstrap: [AppComponent]
